@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="subscribe.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8d0d750b59.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"
+          ><i class="fas fa-microchip"></i> LESTECH</a
+        >
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="/blog.html" class="navbar__links">Blog</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">About Us</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="/ContactUS.html" class="navbar__links">Contact Us</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/" class="button">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <h1>Subscribe</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Add User</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" />
+        </div>
+        <input class="btn" type="submit" value="Submit" />
+      </form>
+
+      <ul id="users"></ul>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
